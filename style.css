@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 /* Varibles */
 * {
   margin: 0;
@@ -22,11 +23,12 @@ body {
   height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
   background: linear-gradient(#af67e9, #6565e7);
+  font-family: 'Kumbh Sans', sans-serif;
 }
 
 .card-container {
   width: 330px;
-  height: 500px;
+  height: 600px;
   background-color: white;
   border-radius: 20px;
   position: relative;
@@ -45,5 +47,47 @@ body {
 .card-container .secondary-img {
   position: absolute;
   left: 40px;
+}
+
+.card-info {
+  position: absolute;
+  top: 130px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.card-info .heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card-info p {
+  font-size: 12px;
+}
+
+.card-info .faq {
+  padding: 0px 25px;
+}
+
+.card-info .question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 10px;
+  margin: 10px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.card-info .question::after {
+  content: url(images/icon-arrow-down.svg);
+}
+
+.card-info .answer {
+  margin: 10px 0px;
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

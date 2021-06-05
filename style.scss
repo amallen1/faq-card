@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
 /* Varibles */
 $softpurple-bg: hsl(273, 75%, 66%);
 $softblue-bg: hsl(240, 73%, 65%);
@@ -23,13 +25,13 @@ body {
     width: 100vw;
     height: 100vh;
     background: linear-gradient($softpurple-bg, $softblue-bg);
-    
-    
+    font-family: 'Kumbh Sans', sans-serif;
+
 }
 
 .card-container {
     width: 330px;
-    height: 500px;
+    height: 600px;
     background-color: white;
     border-radius: 20px;
     position: relative;
@@ -47,6 +49,46 @@ body {
     .secondary-img {
         position: absolute;
         left: 40px;
-
     }
+
+}
+
+.card-info {
+    position: absolute;
+    top: 130px;
+    left:0;
+    right:0;
+    margin: auto;
+
+    .heading {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .faq {
+        padding: 0px 25px;
+    }
+
+    .question {
+        display: flex;
+        justify-content: space-between;
+        &::after{
+            content: url(images/icon-arrow-down.svg);
+            
+        }
+        padding-bottom: 10px;
+        margin: 10px 0px;
+        border-bottom: 1px solid rgba(0,0,0,0.08);
+    }
+
+    .answer {
+        margin: 10px 0px;
+        display: none;
+    }
+
+   
 }
