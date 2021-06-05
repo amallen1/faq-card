@@ -1,0 +1,49 @@
+/* Varibles */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background: linear-gradient(#af67e9, #6565e7);
+}
+
+.card-container {
+  width: 330px;
+  height: 500px;
+  background-color: white;
+  border-radius: 20px;
+  position: relative;
+  top: 20%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.card-container .main-img {
+  position: absolute;
+  top: -110px;
+  left: 10px;
+}
+
+.card-container .secondary-img {
+  position: absolute;
+  left: 40px;
+}
+/*# sourceMappingURL=style.css.map */
