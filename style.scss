@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
 /* Varibles */
 $softpurple-bg: hsl(273, 75%, 66%);
@@ -10,85 +10,132 @@ $softblue-bg: hsl(240, 73%, 65%);
   box-sizing: border-box;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-  position: absolute;
-  bottom:0px;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
+// .attribution {
+//   font-size: 11px;
+//   position: absolute;
+//   bottom: 0px;
+//   left: 250px;
+// }
+// .attribution a {
+//   color: hsl(228, 45%, 44%);
+// }
 
+html,
+body {
+  height: 100%;
+}
 
 body {
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient($softpurple-bg, $softblue-bg);
-    font-family: 'Kumbh Sans', sans-serif;
-
+  width: 100%;
+  background: linear-gradient($softpurple-bg, $softblue-bg);
+  font-family: "Kumbh Sans", sans-serif;
 }
 
 .card-container {
-    width: 330px;
-    height: 600px;
-    background-color: white;
-    border-radius: 20px;
-    position: relative;
-    top: 20%;
-    left: 0;
-    right: 0;
-    margin: auto;
+  width: 330px;
+  height: 560px;
+  background-color: white;
+  border-radius: 20px;
+  position: relative;
+  top: 120px;
+  left: 0;
+  right: 0;
+  margin: auto;
 
-    .main-img {
-        position: absolute;
-        top: -110px;
-        left: 10px;
-    }
+  #mobile-img-1 {
+    position: absolute;
+    top: -110px;
+    left: 10px;
+  }
 
-    .secondary-img {
-        position: absolute;
-        left: 40px;
-    }
+  #mobile-img-2 {
+    position: absolute;
+    left: 40px;
+  }
 
+  .desktop-img-1,
+  .desktop-img-2,
+  .desktop-img-bg {
+    display: none;
+  }
 }
 
 .card-info {
-    position: absolute;
-    top: 130px;
-    left:0;
-    right:0;
-    margin: auto;
+  position: absolute;
+  top: 130px;
+  left: 0;
+  right: 0;
+  margin: auto;
 
-    .heading {
-        text-align: center;
-        margin-bottom: 20px;
+  .heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .faq {
+    padding: 0px 25px;
+  }
+
+  .question {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    &::after {
+      content: url(images/icon-arrow-down.svg);
+    }
+    padding-bottom: 10px;
+    margin: 10px 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  .answer {
+    margin: 10px 0px;
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-container {
+    width: 900px;
+    height: 550px;
+    background-color: white;
+    border-radius: 20px;
+    position: absolute;
+    top: 100px;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 500px;
+
+    #mobile-img-1,
+    #mobile-img-2 {
+      display: none;
     }
 
-    p {
-        font-size: 12px;
+    .desktop-img-1 {
+      position: absolute;
+      top: 100px;
+      left: -50px;
+    }
+  }
+
+  .card-info {
+    grid-column: 2;
+
+    .heading {
+      text-align: left;
     }
 
     .faq {
-        padding: 0px 25px;
+      max-width: 90%;
     }
-
-    .question {
-        display: flex;
-        justify-content: space-between;
-        &::after{
-            content: url(images/icon-arrow-down.svg);
-            
-        }
-        padding-bottom: 10px;
-        margin: 10px 0px;
-        border-bottom: 1px solid rgba(0,0,0,0.08);
-    }
-
-    .answer {
-        margin: 10px 0px;
-        display: none;
-    }
-
-   
+  }
 }
