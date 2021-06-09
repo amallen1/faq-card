@@ -41,24 +41,26 @@ body {
   left: 0;
   right: 0;
   margin: auto;
-
-  #mobile-img-1 {
-    position: absolute;
-    top: -110px;
-    left: 10px;
-  }
-
-  #mobile-img-2 {
-    position: absolute;
-    left: 40px;
-  }
-
-  .desktop-img-1,
-  .desktop-img-2,
-  .desktop-img-bg {
-    display: none;
-  }
 }
+
+.card-image {
+    #mobile-img-1 {
+      position: absolute;
+      top: -110px;
+      left: 10px;
+    }
+
+    #mobile-img-2 {
+      position: absolute;
+      left: 40px;
+    }
+
+    .desktop-img-1,
+    .desktop-img-2,
+    .desktop-img-bg {
+      display: none;
+    }
+  }
 
 .card-info {
   position: absolute;
@@ -105,25 +107,25 @@ body {
     align-items: center;
   }
   .card-container {
+    display: grid;
+    grid-template-columns: 450px 450px;
+    grid-template-rows: 550px;
     width: 900px;
     height: 550px;
-    background-color: white;
+    background-color: #fff;
     border-radius: 20px;
     position: absolute;
     top: 100px;
-    display: grid;
-    grid-template-columns: 400px 400px;
-    grid-template-rows: 500px;
 
+    
     #mobile-img-1,
     #mobile-img-2 {
       display: none;
     }
 
     .desktop-img-1 {
-      position: absolute;
-      top: 100px;
-      left: -50px;
+      grid-column: 1;
+      display: block;
     }
   }
 
@@ -132,6 +134,7 @@ body {
 
     .heading {
       text-align: left;
+      padding: 25px;
     }
 
     .faq {
