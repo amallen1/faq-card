@@ -16,108 +16,74 @@
     <title>Frontend Mentor | FAQ Accordion Card</title>
   </head>
   <body>
-    <div class="card-container">
-      <div class="card-image">
-        <!-- mobile images -->
+    <div class="card">
+      <!-- Actual image -->
+
+      <div class="card-images">
         <img
-          id="mobile-img-1"
-          class="main-img"
+          class="mobile-img"
           src="images/illustration-woman-online-mobile.svg"
-          alt="illustration"
-        />
-        <img
-          id="mobile-img-2"
-          class="secondary-img"
-          src="images/bg-pattern-mobile.svg"
-          alt="floating-bg img"
+          alt="mobile illustration"
         />
 
-        <!-- desktop images -->
+        <!-- Background img -->
+        <!-- <img
+          class="bg-img"
+          src="images/bg-pattern-mobile.svg"
+          alt="background image"
+        /> -->
+
         <img
-          class="desktop-img-1"
+          class="desktop-img"
           src="images/illustration-woman-online-desktop.svg"
-          alt="illustration of woman on desktop"
-        />
-        <img
-          class="desktop-img-2"
-          src="images/illustration-box-desktop.svg"
-          alt="box"
-        />
-        <img
-          class="desktop-img-bg"
-          src="images/bg-pattern-desktop.svg"
-          alt="pattern for main image"
+          alt="desktop illustration"
         />
       </div>
 
-      <div class="card-info">
+      <div class="card-content">
         <h1 class="heading">FAQ</h1>
 
-        <div class="faq">
-          <p class="question" id="question-1">
-            How many team members can I invite?
-          </p>
-          <div class="line"></div>
-          <div class="content">
-            <p class="answer" id="answer-1">
-              You can invite up to 2 additional users on the Free plan. There is
-              no limit on team members for the Premium plan.
-            </p>
-          </div>
-        </div>
+        <p class="question" id="question-1">
+          How many team members can I invite?
+        </p>
+        <div class="line"></div>
 
-        <div class="faq">
-          <p class="question" id="question-2">
-            What is the maximum file upload size?
-          </p>
-          <div class="content">
-            <p class="answer" id="answer-2">
-              No more than 2GB. All files in your account must fit your allotted
-              storage space.
-            </p>
-          </div>
-        </div>
+        <p class="answer">
+          You can invite up to 2 additional users on the Free plan. There is no
+          limit on team members for the Premium plan.
+        </p>
 
-        <div class="faq">
-          <p class="question" id="question-3">How do I reset my password?</p>
-          <div class="content">
-            <p class="answer" id="answer-3">
-              Click “Forgot password” from the login page or “Change password”
-              from your profile page. A reset link will be emailed to you.
-            </p>
-          </div>
-        </div>
+        <p class="question" id="question-2">
+          What is the maximum file upload size?
+        </p>
 
-        <div class="faq">
-          <p class="question" id="question-4">Can I cancel my subscription?</p>
-          <div class="content">
-            <p class="answer" id="answer-4">
-              Yes! Send us a message and we’ll process your request no questions
-              asked.
-            </p>
-          </div>
-        </div>
+        <p class="answer" id="answer-2">
+          No more than 2GB. All files in your account must fit your allotted
+          storage space.
+        </p>
 
-        <div class="faq">
-          <p class="question" id="question-5">
-            Do you provide additional support?
-          </p>
-          <div class="content">
-            <p class="answer" id="answer-5">
-              Chat and email support is available 24/7. Phone lines are open
-              during normal business hours.
-            </p>
-          </div>
-        </div>
+        <p class="question" id="question-3">How do I reset my password?</p>
+        <p class="answer" id="answer-3">
+          Click “Forgot password” from the login page or “Change password” from
+          your profile page. A reset link will be emailed to you.
+        </p>
+
+        <p class="question" id="question-4">Can I cancel my subscription?</p>
+
+        <p class="answer" id="answer-4">
+          Yes! Send us a message and we’ll process your request no questions
+          asked.
+        </p>
+
+        <p class="question" id="question-5">
+          Do you provide additional support?
+        </p>
+        <p class="answer" id="answer-5">
+          Chat and email support is available 24/7. Phone lines are open during
+          normal business hours.
+        </p>
       </div>
     </div>
-
-    <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
     <script src="app.js"></script>
   </body>
 </html>
