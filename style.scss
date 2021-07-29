@@ -10,89 +10,68 @@ $softblue-bg: hsl(240, 73%, 65%);
   box-sizing: border-box;
 }
 
-// .attribution {
-//   font-size: 11px;
-//   position: absolute;
-//   bottom: 0px;
-//   left: 250px;
-// }
-// .attribution a {
-//   color: hsl(228, 45%, 44%);
-// }
-
 body {
-  min-height: 100vh;
   background: linear-gradient($softpurple-bg, $softblue-bg);
   font-family: "Kumbh Sans", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+.container {
+  padding: 5em 0;
 }
 
 .card {
-  background-color: #fff;
-  width: 85%;
-  max-width: 900px;
-  display: flex;
-  flex-direction: column;
-  padding: 1.5em;
+  width: 95%;
+  margin: 0 auto;
+  max-width: 500px;
+  background-color: white;
+  // position: relative;
   border-radius: 20px;
-  position: relative;
-  margin: 40px 0px;
-}
 
-.card-images {
+  .heading {
+    font-size: 2rem;
+    text-align: center;
+    //margin-top: 4em;
+    margin-bottom: 1.5em;
+  }
+
+  .mobile-img {
+    //position: absolute;
+    //top: -50px;
+    //left: 50px;
+  }
+
   .desktop-img {
     display: none;
   }
 }
 
-.card-content {
-  .heading {
-    text-align: center;
-    margin-bottom: 1.2em;
+.card-text {
+  padding: 0 2em;
+
+  .question,
+  .answer {
+    margin-bottom: 1em;
   }
 
   .question {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1.5em;
-    cursor: pointer;
     &::after {
       content: url(/images/icon-arrow-down.svg);
     }
   }
-
-  .answer {
-    margin-bottom: 1.3em;
-  }
 }
 
-@media (min-width: 594px) {
-  .card {
-    //flex-direction: row;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 500px;
-  }
+// @media (min-width: 1000px) {
+//   .card {
+//     flex-direction: row;
 
-  .card,
-  .card-content {
-    
-  }
+//     .mobile-img {
+//       display: none;
+//     }
 
-  .card-images {
-    .mobile-img{
-      //display: none;
-    }
-
-    .desktop-img{
-      //display: block;
-    }
-
-  }
-
-  .card-content {
-    padding: 1.5em;
-  }
-}
+//     .desktop-img {
+//       display: block;
+//     }
+//   }
+// }
