@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
-/* Varibles */
 * {
   margin: 0;
   padding: 0;
@@ -7,15 +6,21 @@
           box-sizing: border-box;
 }
 
-html {
-  min-height: 100%;
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+
+.attribution a {
+  color: #333;
 }
 
 body {
   background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
   background: linear-gradient(#af67e9, #6565e7);
   font-family: "Kumbh Sans", sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .container {
@@ -29,6 +34,8 @@ body {
   max-width: 44rem;
   background-color: white;
   border-radius: 20px;
+  -webkit-box-shadow: 0px 10px 15px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 15px 10px rgba(0, 0, 0, 0.2);
   background-image: url(/images/bg-pattern-mobile.svg);
   background-repeat: no-repeat;
   background-position: center 0%;
@@ -60,11 +67,7 @@ body {
   padding: 0 2em;
   -webkit-transform: translateY(-10%);
           transform: translateY(-10%);
-}
-
-.card-text .question,
-.card-text .answer {
-  margin-bottom: 1em;
+  /* ACTIVE styles */
 }
 
 .card-text .question {
@@ -76,8 +79,9 @@ body {
           justify-content: space-between;
   color: #4a4b5e;
   font-weight: 400;
-  padding-top: 1em;
+  padding: 1em 0;
   cursor: pointer;
+  border-bottom: 1px solid #e7e7e9;
 }
 
 .card-text .question::after {
@@ -89,42 +93,33 @@ body {
   color: #f47c57;
 }
 
-.card-text .line {
-  height: 1px;
-  width: 100%;
-  background-color: #e7e7e9;
-}
-
 .card-text .answer {
-  font-size: 14px;
-  font-weight: 400;
   color: #787887;
+  display: none;
+  padding-bottom: 1em;
 }
 
 .card-text .active .line {
-  -webkit-transform: translateY(30px);
-          transform: translateY(30px);
-}
-
-.card-text .faq > .answer {
   display: none;
 }
 
 .card-text .active > .question {
   font-weight: 700;
   color: #f47c57;
+  border: none;
 }
 
 .card-text .active > .question::after {
   content: url(/images/icon-arrow-down.svg);
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  -webkit-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .card-text .active > .answer {
   display: block;
+  border-bottom: 1px solid #e7e7e9;
 }
 
 @media (min-width: 900px) {
@@ -170,17 +165,10 @@ body {
   .card-text {
     -webkit-transform: none;
             transform: none;
-    padding: 5em 2em;
+    padding: 5em 5em;
   }
   .card-text .heading {
     text-align: left;
-  }
-  .card-text .question {
-    padding: 1.5em 0;
-    margin: 0;
-  }
-  .card-text .answer {
-    margin: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
