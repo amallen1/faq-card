@@ -17,7 +17,6 @@ $dark-grayish-blue: hsl(240, 6%, 50%);
 //Divider colors
 $light-grayish-blue: hsl(240, 5%, 91%);
 
-
 * {
   margin: 0;
   padding: 0;
@@ -76,6 +75,7 @@ body {
 
 .card-text {
   padding: 0 2em;
+  transform: translateY(-10%);
 
   .question,
   .answer {
@@ -93,7 +93,10 @@ body {
       content: url(/images/icon-arrow-down.svg);
       color: $soft-red;
     }
-    
+
+    &:hover {
+      color: $soft-red;
+    }
   }
 
   .line {
@@ -102,11 +105,15 @@ body {
     background-color: $light-grayish-blue;
   }
 
+  .answer {
+    font-size: 14px;
+    font-weight: 400;
+    color: $dark-grayish-blue;
+  }
+
   .active .line {
-    
     transform: translateY(30px);
     //transition: all 0.1s ease-in;
-
   }
 
   .faq > .answer {
@@ -115,7 +122,7 @@ body {
 
   .active > .question {
     font-weight: 700;
-    color: $very-dark-desaturated-blue;
+    color: $soft-red;
     &::after {
       content: url(/images/icon-arrow-down.svg);
       transform: rotate(180deg);
@@ -125,18 +132,24 @@ body {
 
   .active > .answer {
     display: block;
-    
-    
   }
-
 }
 
+
 @media (min-width: 900px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .card {
     display: flex;
-    flex: 1;
     width: 100%;
     max-width: 1000px;
+    background-image: url("/images/bg-pattern-desktop.svg");
+    background-size: 75%;
+    background-position: -150% 70%;
+    //font-size: 16px;
 
     .mobile-img {
       display: none;
@@ -144,13 +157,39 @@ body {
 
     .desktop-img {
       display: block;
-      max-width: 25em;
+      max-width: 30em;
+      width: 100%;
+      height: auto;
+      display: block;
+      transform: translateY(10%) translateX(-10%);
     }
   }
-}
+
+  .card-image,
+  .card-text {
+    flex: 1;
+  }
+
+  .card-text {
+    transform: none;
+    padding: 5em 2em;
+
+    .heading {
+      text-align: left;
+    }
+
+    .question {
+      padding: 1.5em 0;
+      margin: 0;
+    }
+
+    .line {
+      //margin-top: 1em;
+    }
+    .answer {
+      margin: 0;
+    }
 
 
-
-.card-image , .card-text {
-  flex: 1;
+  }
 }
