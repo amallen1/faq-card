@@ -41,7 +41,7 @@ body {
 .card {
   width: 95%;
   margin: 5em auto;
-  padding-bottom: 1em;
+  padding-bottom: 2em;
   max-width: 44rem;
   background-color: white;
   border-radius: 20px;
@@ -87,6 +87,7 @@ body {
     justify-content: space-between;
     color: $very-dark-grayish-blue;
     font-weight: 400;
+    cursor: pointer;
     &::after {
       content: url(/images/icon-arrow-down.svg);
       color: $soft-red;
@@ -95,15 +96,15 @@ body {
     border-bottom: 1px solid $light-grayish-blue;
   }
 
-  .clicked {
-    font-weight: 700;
-    color: $very-dark-desaturated-blue;
-
-  }
-
   .answer {
     display: none;
   }
+
+  .clicked {
+    font-weight: 700;
+    color: $very-dark-desaturated-blue;
+  }
+
 }
 
 @media (min-width: 900px) {
