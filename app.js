@@ -1,10 +1,7 @@
-const questions = Array.from(document.getElementsByClassName('question'));
-const answers = Array.from(document.getElementsByClassName('answer'));
+const questions = Array.from(document.getElementsByClassName("question"));
 
-console.log(questions);
-
-questions.forEach(question => {
-    question.addEventListener('click', () => {
-        question.classList.toggle('clicked');
-    })
-})
+questions.forEach((question) => {
+  question.addEventListener("click", () => {
+    question.parentNode.classList.toggle("active");
+  });
+});

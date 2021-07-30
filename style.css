@@ -74,9 +74,8 @@ body {
           justify-content: space-between;
   color: #4a4b5e;
   font-weight: 400;
+  padding-top: 1em;
   cursor: pointer;
-  padding-bottom: 1em;
-  border-bottom: 1px solid #e7e7e9;
 }
 
 .card-text .question::after {
@@ -84,13 +83,36 @@ body {
   color: #f47c57;
 }
 
-.card-text .answer {
+.card-text .line {
+  height: 1px;
+  width: 100%;
+  background-color: #e7e7e9;
+}
+
+.card-text .active .line {
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+}
+
+.card-text .faq > .answer {
   display: none;
 }
 
-.card-text .clicked {
+.card-text .active > .question {
   font-weight: 700;
   color: #1d1e35;
+}
+
+.card-text .active > .question::after {
+  content: url(/images/icon-arrow-down.svg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.card-text .active > .answer {
+  display: block;
 }
 
 @media (min-width: 900px) {
