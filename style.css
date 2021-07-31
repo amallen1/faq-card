@@ -13,7 +13,11 @@
 }
 
 .attribution a {
-  color: #333;
+  color: #f47c57;
+}
+
+html {
+  min-height: 100%;
 }
 
 body {
@@ -48,6 +52,10 @@ body {
 }
 
 .card .desktop-img {
+  display: none;
+}
+
+.card .box {
   display: none;
 }
 
@@ -99,10 +107,6 @@ body {
   padding-bottom: 1em;
 }
 
-.card-text .active .line {
-  display: none;
-}
-
 .card-text .active > .question {
   font-weight: 700;
   color: #f47c57;
@@ -122,39 +126,52 @@ body {
   border-bottom: 1px solid #e7e7e9;
 }
 
-@media (min-width: 900px) {
-  .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
+@media (min-width: 800px) {
   .card {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
+    width: 80%;
     max-width: 1000px;
     background-image: url("/images/bg-pattern-desktop.svg");
-    background-size: 75%;
-    background-position: -150% 70%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 70%;
   }
   .card .mobile-img {
     display: none;
   }
-  .card .desktop-img {
+  .card .box-div {
+    position: relative;
+    -webkit-transform: translateY(38%) translateX(500%);
+            transform: translateY(38%) translateX(500%);
+    z-index: 20;
+  }
+  .card .box {
+    display: block;
+    position: absolute;
+    -webkit-transform: translateX(-48.5%);
+            transform: translateX(-48.5%);
+  }
+  .card-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+  }
+  .card-image .desktop-img {
     display: block;
     max-width: 30em;
     width: 100%;
     height: auto;
     display: block;
-    -webkit-transform: translateY(10%) translateX(-10%);
-            transform: translateY(10%) translateX(-10%);
+    -webkit-transform: translateX(-17%);
+            transform: translateX(-17%);
+    position: relative;
+    z-index: 10;
   }
   .card-image,
   .card-text {
@@ -165,7 +182,7 @@ body {
   .card-text {
     -webkit-transform: none;
             transform: none;
-    padding: 5em 5em;
+    padding: 5em 5em 5em 0;
   }
   .card-text .heading {
     text-align: left;
