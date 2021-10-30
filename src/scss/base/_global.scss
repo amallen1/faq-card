@@ -1,0 +1,19 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+
+  a {
+    color: $soft-red;
+  }
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  background: linear-gradient($softpurple-bg, $softblue-bg);
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 0.75rem;
+}

@@ -4,36 +4,50 @@
 
 ## Welcome! 👋
 
+This is a solution to the [FAQ accordion card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam).
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Table of contents
 
-**To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
+
+## Overview
 
 ## The challenge
 
 The challenge was to build out a FAQ accordion card and get it looking as close to the provided design as possible.
 
 Users should be able to:
+
 - View the optimal layout for the component depending on their device's screen size
 - See hover states for all interactive elements on the page
 - Hide/Show the answer to a question when the question is clicked
 
+### Screenshot
 
+### Links
+
+- Solution URL: [Code](https://github.com/amallen1/faq-card)
+- Live Site URL: [FAQ Accordion Card](https://objective-beaver-407c95.netlify.app/)
 
 ## My Process
 
-Built with
+### Built with
+
 - HTML
-- CSS
-- Javascript 
-- Flexbox
+- Scss
+- Javascript
 - Mobile-first workflow
 
 ## What I learned
-This challenged helped to increase my skills at positioning items with CSS. 
 
-
-
-
-
-
+This challenged helped to increase my skills at positioning items with CSS.
