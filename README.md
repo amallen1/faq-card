@@ -15,10 +15,7 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -33,6 +30,10 @@ Users should be able to:
 - Hide/Show the answer to a question when the question is clicked
 
 ### Screenshot
+
+| Mobile (375px)                                 | Desktop (1440px)                                 |
+| ---------------------------------------------- | ------------------------------------------------ |
+| ![Mobile](./screenshots/mobile_screenshot.png) | ![Desktop](./screenshots/desktop_screenshot.png) |
 
 ### Links
 
@@ -51,3 +52,7 @@ Users should be able to:
 ## What I learned
 
 This challenged helped to increase my skills at positioning items with CSS.
+
+## Author
+
+- Frontend Mentor - [@amallen1](https://www.frontendmentor.io/profile/amallen1)

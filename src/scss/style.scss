@@ -9,7 +9,6 @@
 }
 
 .card {
-  // padding-bottom: 2em;
   background-color: white;
   border-radius: 23px;
   box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.4972),
@@ -29,13 +28,13 @@
     display: none;
   }
 
-  .desktop-bg {
+  .desktop-bg,
+  .box {
     display: none;
   }
 }
 
 /* CARD IMAGE */
-
 .card-image {
   .mobile-img {
     margin: auto;
@@ -76,7 +75,6 @@
   /* ACTIVE styles */
   .active > .question {
     font-weight: 700;
-    color: $soft-red;
     &::after {
       content: url(/images/icon-arrow-down.svg);
       transform: rotate(180deg);
@@ -92,9 +90,8 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   body {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -106,15 +103,22 @@
 
   .card {
     display: flex;
-    width: 80%;
     margin: 0 auto;
     max-width: 920px;
     background-image: none;
     position: relative;
-    // z-index: -10;
 
     .mobile-img {
       display: none;
+    }
+
+    .box {
+      display: block;
+      position: absolute;
+      transform: translate(-48%, 85%);
+      z-index: 10;
+      max-width: 100%;
+      height: auto;
     }
   }
 
@@ -127,21 +131,12 @@
     background-position: 108% 70%;
     background-repeat: no-repeat;
 
-    .box {
-      display: block;
-      position: absolute;
-      top: 150px;
-      left: -90px;
-      z-index: 20;
-    }
-
     .desktop-img {
       max-width: 100%;
       height: auto;
       display: block;
       position: absolute;
       left: -50px;
-      z-index: 10;
     }
   }
 
@@ -156,7 +151,6 @@
 
     .heading {
       text-align: left;
-      margin-bottom: 1em;
     }
   }
 }
